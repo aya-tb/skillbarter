@@ -1,3 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    text-decoration:none;
+}
+
+:root{
+    --b-blue:#1A3A6D;
+    --c-blue:#2D68C4;
+    --gold:#F1B434;
+    --h1-blue:#1A3A6DDD;
+}
 header{
     display:flex;
     justify-content:space-between;
@@ -49,4 +63,207 @@ header{
 }
 span{
     color: var(--gold);
+}
+a{
+    text-decoration: none;
+}
+/*main*/
+/*S1*/
+.div1-main{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px 5%;
+    gap:40px;
+    flex-wrap:wrap;
+    font-size: 24px;
+    color: var(--b-blue);
+}
+
+.main-left{
+    flex:1;
+    min-width:280px;
+}
+
+.main-left h2{
+    font-size:50px;
+    color:var(--b-blue);
+    margin-bottom:15px;
+}
+.main-left p{
+    font-size:35px;
+    margin-bottom:45px;
+}
+.main-left a{
+    background-color:var(--gold);
+    color:white;
+    padding:12px 25px;
+    border-radius:30px;
+    display:inline-block;
+    transition: 0.3s ease;
+}
+.div1-main a:hover{
+    background-color: #173055;
+    transform: scale(1.05);
+}
+
+
+.main-right{
+    flex:1;
+    min-width:280px;
+}
+
+.main-right img{
+    width:100%;
+    max-width:655px;
+}
+.credits-card{
+    width:500px;
+    height:220px;
+    background: #FCF5AB;
+    border-radius:12px;
+    padding:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* Left side */
+
+.card-left{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+.card-left img{
+    height:40px;
+    width: 40px;
+
+}
+
+.credits-number{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#1A3A6D;
+    margin: 8px 0px;
+
+}
+.credits-number p,.credits-card p{
+    margin: 0;
+}
+
+.small-icon{
+    font-size:18px;
+}
+/* Button */
+
+.earn-btn{
+    background:#F1B434;
+    border:none;
+    padding:10px 18px;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.3s;
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+}
+
+.earn-btn:hover{
+    transform: scale(1.05);
+}
+
+/* Right side icon */
+
+.card-right{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.card-right img {
+    height: 110px;
+
+}
+/*Quick-actions*/
+.div2-main{
+    padding:60px 5%;
+
+}
+.div2-main h2{
+    color: var(--b-blue);
+
+}
+/* Cards Section */
+
+.cards-section{
+    display:flex;
+    gap:30px;
+    margin-top:80px;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+}
+
+/* Card */
+
+.skill-card{
+    width:220px;
+    background:#c9d5f7ec;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+    text-align:center;
+    padding-bottom:20px;
+    transition:0.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-5px);
+}
+
+/* Image */
+
+.skill-card img{
+    height:80px;
+    object-fit:cover;
+    border-radius:12px 12px 0 0;
+    padding-top: 20px;
+}
+
+/* Title */
+
+.skill-card h3{
+    color:var(--b-blue);
+    margin:15px 0;
+}
+
+/* Button */
+
+.skill-card button{
+    background:var(--b-blue);
+    border:none;
+    padding:10px 20px;
+    border-radius:20px;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.skill-card button:hover{
+    transform:scale(1.05);
+}
+#skill-card4{
+    background-color: rgb(251, 142, 142);
+
+}
+#skill-card3{
+    background-color: #FCF5AB;
+}
+#skill-card2{
+    background-color:  #96CAFE;
+}
+#skill-card1{
+    background:#c2c9dbec;
+
 }

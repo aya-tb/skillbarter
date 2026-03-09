@@ -4,88 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SkillBarter Signup</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: 'Poppins', sans-serif;
-}
-
-body{
-background:#F8F9FA;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-}
-
-/* Signup Box */
-
-.signup-container{
-background:white;
-padding:40px;
-width:350px;
-border-radius:12px;
-box-shadow:0 8px 20px rgba(0,0,0,0.1);
-text-align:center;
-}
-
-.signup-container h1{
-color:#1A3A6D;
-margin-bottom:10px;
-}
-
-.signup-container p{
-color:#2D68C4;
-font-size:14px;
-margin-bottom:25px;
-}
-
-/* Inputs */
-
-.signup-container input{
-width:100%;
-padding:12px;
-margin-bottom:18px;
-border:1px solid #E0E0E0;
-border-radius:8px;
-font-size:14px;
-}
-/* Button */
-
-.signup-container button{
-width:100%;
-padding:12px;
-border:none;
-border-radius:8px;
-background:#2D68C4;
-color:white;
-font-size:16px;
-cursor:pointer;
-transition:0.3s;
-}
-
-.signup-container button:hover{
-background:#1A3A6D;
-}
-
-/* Links */
-
-.signup-container a{
-color:#F1B434;
-text-decoration:none;
-font-size:14px;
-}
-
-.signup-container a:hover{
-text-decoration:underline;
-}
-
-</style>
-
+<link rel="stylesheet" href="style/style-sing-up.css">
+<script></script>
 </head>
 
 <body>
@@ -113,34 +33,5 @@ text-decoration:underline;
 <a href="login.html">Login</a>
 
 </div>
-
-<script>
-
-document.getElementById("signupForm").addEventListener("submit", function(e){
-e.preventDefault();
-
-// Save signup simulation
-localStorage.setItem("loggedIn","true");
-
-alert("Account created successfully!");
-
-window.location.href="";
-
-});
-document.getElementById("signupForm").addEventListener("submit", function(e){
-
-e.preventDefault();
-
-let name = document.getElementById("name").value;
-
-localStorage.setItem("userName", name);
-localStorage.setItem("loggedIn","true");
-
-window.location.href="";
-
-});
-
-</script>
-
 </body>
 </html>

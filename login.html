@@ -12,9 +12,10 @@
   <h1>SkillBarter</h1>
   <p>Login to start your learning journey</p>
   <form id="loginForm">
+    <input type="text"  placeholder="userName" required>
     <input type="email" id="email" placeholder="Email" required>
     <input type="password" id="password" placeholder="Password" required>
-    <button type="submit"><a href="">Login</a></button>
+    <button type="submit"><a href="home.html">Login</a></button>
   </form>
   <div class="links">
     <span>Don't have an account?</span>
@@ -22,16 +23,7 @@
   </div>
 </div>
 
-<script>
-  // Simple Login Simulation
-  document.getElementById("loginForm").addEventListener("submit", function(e){
-    e.preventDefault();
-    // Save login state
-    localStorage.setItem("loggedIn", "true");
-    // Redirect to Home Page
-    window.location.href = "";
-  });
-</script>
+<script src="javascript/loginscript.js"></script>
 
 </body>
 </html>

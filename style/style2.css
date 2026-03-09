@@ -12,6 +12,9 @@
     --gold:#F1B434;
     --h1-blue:#1A3A6DDD;
 }
+a{
+    text-decoration: none;
+}
 
 /* HEADER */
 
