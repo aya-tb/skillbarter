@@ -1,0 +1,326 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    text-decoration:none;
+}
+
+:root{
+    --b-blue:#1A3A6D;
+    --c-blue:#2D68C4;
+    --gold:#F1B434;
+    --h1-blue:#1A3A6DDD;
+}
+body{
+    margin: 30px;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 0px 5%;
+    flex-wrap:wrap;
+}
+
+.pages-link{
+    display:flex;
+    gap:20px;
+}
+
+.pages-link a{
+    color:var(--b-blue);
+    font-weight:600;
+}
+
+.login-home-page-links{
+    display:flex;
+    gap:10px;
+}
+
+.star-b{
+    background-color:#1f3d6b;
+    color:white;
+    padding:10px 22px;
+    border-radius:30px;
+    font-weight:600;
+}
+.star-b:hover{
+    background-color: #173055;
+}
+
+.login-link{
+    color:#1f3d6b;
+    padding:10px 20px;
+    font-weight:600;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h2{
+    color: var(--b-blue);
+}
+.logo img{
+    height: 120px;
+}
+span{
+    color: var(--gold);
+}
+a{
+    text-decoration: none;
+}
+/*main1*/
+
+/*title*/
+.title{    
+    text-align: center;
+    margin: 30px;
+    color: #173055;
+}
+    
+    /* SEARCH */
+    
+    .search-box{
+    display:block;
+    width:400px;
+    padding:12px 20px;
+    border:none;
+    outline:none;
+    background: #DCD8D8;
+    border-radius:25px;
+    font-size:16px;
+    }
+    .search-container img{   
+        height: 22px;
+    }
+    .search-box::placeholder{    
+        color: #173055;
+    }
+    .search-container{
+        width:600px;
+        margin:auto;
+        background:#dcdcdc;
+        border-radius:30px;
+        padding:12px 20px;
+        display:flex;
+        align-items:center;
+        gap:10px;
+        height: 45px;
+        }
+        
+        .search-box{
+        border:none;
+        background:transparent;
+        outline:none;
+        width:100%;
+        font-size:20px;
+        height: 45px;
+        }
+        
+        /* BUTTONS */
+        
+        .skills-buttons{
+        margin-top:25px;
+        display:flex;
+        justify-content:center;
+        gap:20px;
+        margin-bottom:25px ;
+        }
+        
+        .skills-buttons button{
+        background:#dcdcdc;
+        border:none;
+        padding:12px 30px;
+        border-radius:15px;
+        color:#1f3b66;
+        cursor:pointer;
+        font-size: 18px;
+        font-weight: bold;
+        transition:0.3s;
+        }
+        .skills-buttons button:hover{
+            background-color: var(--h1-blue);
+            color: #DCD8D8;
+        }
+
+
+    
+    /* CARDS */
+    
+    .cards-container{
+    display:flex;
+    gap:20px;
+    justify-content:space-between;
+    }
+    
+    /* CARD */
+    
+    .card{
+    width:320px;
+    background: #dcdcdc;
+    border-radius:12px;
+    padding:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    transition:0.3s;
+    }
+    .card:hover{
+        transform:translateY(-8px);
+        box-shadow:0 10px 20px rgba(0,0,0,0.15);
+        }
+    
+    /* TOP PART */
+    
+    .card-top{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    }
+    
+    /* IMAGE */
+    
+    .card-top img{
+    width:90px;
+    height:90px;
+    border-radius:10px;
+    object-fit:cover;
+    }
+    
+    /* TEXT */
+    
+    .card-text h3{
+    margin:0;
+    font-size:18px;
+    color:#173055;
+    }
+    
+    .card-text p{
+    font-size:14px;
+    color:var(--h1-blue);
+    margin-top:5px;
+    }
+    
+    /* BUTTON */
+    
+    .card-btn{
+    margin-top:15px;
+    align-self:center;
+    background:var(--c-blue);
+    border:none;
+    padding:8px 20px;
+    border-radius:20px;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+    }
+    .card-btn:hover{
+        background:#173055;
+        transform:scale(1.05);
+        }
+    
+    /* NO RESULTS */
+    
+    #noResults{
+    text-align:center;
+    display:none;
+    margin-top:30px;
+    font-weight:bold;
+    }
+    /* TITLE */
+
+.section-title{
+    color:#1f3b66;
+    font-size:28px;
+    margin:30px;
+    }
+    
+    /* CONTAINER */
+    
+    .teachers-container{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content: center;
+    }
+    
+    /* CARD */
+    
+    .teacher-card{
+    background: #dcdcdc;
+    padding:20px;
+    border-radius:12px;
+    transition:0.3s;
+    width:285px;
+    justify-content: space-between;
+    }
+    
+    /* HOVER CARD */
+    
+    .teacher-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+    }
+    
+    /* HEADER */
+    
+    .teacher-header{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:15px;
+    }
+    
+    .teacher-header img{
+    width:50px;
+    border-radius:60px;
+    }
+    
+    /* TEXT */
+    
+    .teacher-header h3{
+    margin:0;
+    color:#1f3b66;
+    font-size:16px;
+    }
+    
+    .rating{
+    margin:3px 0;
+    font-size:14px;
+    color:  #1A3A6D;
+    
+    }
+    
+    .speciality{
+    font-weight:bold;
+    color:#1f3b66;
+    margin-bottom:5px;
+    }
+    
+    .experience{
+    color:#1A3A6D;
+    margin-bottom:15px;
+    }
+    
+    /* BUTTON */
+    
+    .book-btn{
+    background:#f3b233;
+    border:none;
+    padding:10px 20px;
+    border-radius:20px;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+    }
+    
+    /* HOVER BUTTON */
+    
+    .book-btn:hover{
+    background:#e29d1c;
+    transform:scale(1.05);
+    }
